@@ -1,63 +1,215 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Generic - Hyperspace by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="en">
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">tal-labs</a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
-					</ul>
-				</nav>
-			</header>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Monaco', 'Courier New';
+      background-color: #eb9797;
+    }
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Hi, I am Nachiket</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-						</div>
-					</section>
+    #hello {
+      margin-top: -180px;
+      margin-left: 280px;
+      position: absolute;
+      font-size: 40px;
+    }
 
-			</div>
+    #about {
+      /*  background-color: #D57878;*/
+      height: 1020px;
+      margin-top: 250px;
+      margin-left: 0px;
+      /* position: absolute; */
+    }
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+    #gray-box {
+      /*  margin-top:150px;*/
+      border-radius: 5px;
+      width: 670px;
+      margin: 0 auto;
+      padding-top: 15px;
+      font-size: 30px;
+      background: #cccccc;
+      height: 620px;
+      font-family: 'Monaco', 'Courier New';
+      text-align: left;
+      font-size: 13px;
+      color: #fafafa;
+    }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    #black-box {
+      width: 670px;
+      padding: 20px;
+      height: 620px;
+      margin: 0 auto;
+      background: #383737;
 
-	</body>
+    }
+
+    span.answer {
+      color: #ccc;
+    }
+
+
+    .btn-grad {
+      /* background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4 51%, #E55D87 100%); */
+      border: solid;
+      background-color: transparent;
+    }
+
+    .btn-grad {
+      margin-top: -80px;
+      padding: 15px 35px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: #000000;
+      border-color: #000000;
+      box-shadow: 0 0 10px rgb(61, 61, 61);
+      border-radius: 10px;
+      display: block;
+      /* width: 50px; */
+      position: absolute;
+    }
+
+    .btn-grad-resume:hover {
+      background-position: right center;
+      color: rgb(248, 245, 245);
+      text-decoration: none;
+      background-color: #FFFFFF;
+      background-image: linear-gradient(90deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+      border-color: #000000;
+
+    }
+
+    .btn-grad-linkedin:hover {
+      background: #3a7bd5;
+      background: -webkit-linear-gradient(to right, #3a7bd5, #3a6073);
+      background: linear-gradient(to right, #3a7bd5 0%, #3a6073 100%);
+      border-color: #000000;
+      text-decoration: none;
+      background-position: right center;
+      color: rgb(248, 245, 245);
+    }
+
+    .btn-grad-website:hover {
+      background: #ff5f6d;
+      background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
+      background: linear-gradient(to right, #ff5f6d, #ffc371);
+      border-color: #000000;
+      text-decoration: none;
+      background-position: right center;
+      color: rgb(248, 245, 245);
+    }
+
+    .btn-grad-back:hover {
+      background: #bdc3c7;
+      background: -webkit-linear-gradient(to right, #bdc3c7, #2c3e50, );
+      background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    }
+
+    .btn-grad-back {
+      background: #bdc3c7;
+      background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+      background: linear-gradient(to right, #2c3e50, #bdc3c7);
+      color: #ffffff;
+    }
+
+    a {
+      color: rgb(0, 0, 0);
+    }
+
+    a:hover {
+      color: rgb(0, 0, 0);
+      text-decoration: underline;
+    }
+  </style>
+  <title>About Me - Nachiket</title>
+</head>
+
+<body>
+
+  <p id="hello">Hi! This is Nachiket Hinge &#128515 &#128187;</p>
+
+  <a href="https://tal-labs.com">
+    <div class="btn-grad btn-grad-back"
+      style="margin-left: 20px; margin-top: -190px; padding: 10px 15px; border-radius: 30px;"> &lt- Go Back </div>
+  </a>
+
+  <a href="Nachiket Hinge Resume.pdf">
+    <div class="btn-grad btn-grad-resume" style="margin-left: 200px;">View My Resume</div>
+  </a>
+  <a href="#">
+    <div class="btn-grad btn-grad-website" style="margin-left: 500px;">View my Website</div>
+  </a>
+  <a href="https://www.linkedin.com/in/nhinge1/">
+    <div class="btn-grad btn-grad-linkedin" style="margin-left: 850px;">View my LinkedIn</div>
+  </a>
+  <div id="about">
+
+    <p></p><br /><br /><br />
+    <div id="gray-box">
+      <div id="black-box">
+        &gt; Nachiket.role<br />
+        <span class="answer">&nbsp;&nbsp;=&gt; "Web Developer and Data Scientist at Tal-labs"<br /><br /></span>
+
+        &gt; Nachiket.origin<br />
+        <span class="answer">&nbsp;&nbsp;=&gt; "Athens, Georgia"<br /><br /></span>
+
+        &gt; Nachiket.education<br />
+        <span class="answer">&nbsp;&nbsp;=&gt; "University of Georgia"<br /><br /></span>
+
+        &gt; Nachiket.major<br />
+        <span class="answer">&nbsp;&nbsp;=&gt; "Data Science"<br /><br /></span>
+
+        &gt; Nachiket.expectedGraduation<br />
+        <span class="answer">&nbsp;&nbsp;=&gt; "May 2023"<br /><br /></span>
+
+        &gt; Nachiket.interests<br />
+        <span class="answer">&nbsp;&nbsp;=&gt; ["Sports", "Coding", "Chess", "Reading"]<br /><br /></span>
+
+        &gt; Nachiket.workExperience(latest)<br />
+        <span class="answer">&nbsp;&nbsp;=&gt; Latest Work Experience<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; company: "Forkaia"<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; role: "Web Developer Intern"<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; startDate: "May 2020"<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; endDate: "July 2020"<br /><br /></span>
+
+        &gt; Nachiket.email<br />
+        <span class="answer">&nbsp;&nbsp;=&gt; "<a target="_blank" href="mailto:nachikethinge@hotmail.com"
+            style="color: #2ca3e7;">nachikethinge@hotmail.com</a>"<br /><br /></span>
+        &gt; Nachiket.github<br />
+        <span class="answer">&nbsp;&nbsp;=&gt; "Athens, Georgia"<br /><br /></span>
+      </div>
+    </div>
+  </div>
+
+  <p style="margin-top: -300px; margin-left: 35%;">Made with 💛 and 🍕 at Tal-Labs 🖥️</p>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
