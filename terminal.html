@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <title>Hakan Gunerli Resume Terminal</title>
+    
+<head>
+    <link rel="shortcut icon" href="x-mark.svg" type="image/x-icon">
+    
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+
+</head>
+<body>
+
+    <script>
+        
+        $('body').terminal({
+            
+name: function(name) {        
+            this.echo('Hello, ' + name +' welcome to this terminal. \n ');
+                          this.echo("let's talk. what would you like to know about me?\n commands you can use are: [education] [experience] [projects] and more. \n if you want to know the total list. type, [man]"); 
+            },
+man: function() {
+        this.echo("possible commands you can try:  \n [about]: about me a little \n [experience]: my work experience \n [education]: my education \n [certifications] : my certifications and their links \n [contact]: for my social media \n [volunteer] : my volunteer experience \n [relevant]: my relevant courses taken  \n [exit] to get out of here. ");
+            }, 
+volunteer: function() {
+        this.echo("i like volunteering, when i find the time. here are some places i've volunteered at. \n \n united nations, online volunteer #1506493 \n american red cross, regional front end developer \n americorps, tech volunteer \n google local guides, atlanta local guide \n code.org, volunteer \n khan academy, turkish translator ");
+
+            },
+exit: function() {
+        this.echo("too sad to see you go. i have hidden some easter eggs, but i assume you have no time to see those. anyway. bye.");
+            // kick user out. 
+            }, 
+test: function() 
+            {
+        this.echo("test is not in the sudoers file.  This incident will be reported."  );   
+        }, 
+moo: function(){
+// this needs to be fixed. 
+                this.echo("          (__) \n          (oo) \n    /------\/ \n   / |    || \n *  /\---/\ \n    ~~   ~~");
+
+            },
+sudo: function(){
+                this.echo("[sudo] password for user: \n Sorry, try again. " );
+            },
+
+education: function(){
+                this.echo("Georgia State University CS Emphasis in Data Science (2019-2021)"); 
+                this.echo("University of Georgia CS Emphasis in Data Science and AI (2019-2023) " );
+            },
+certifications: function(){
+                this.echo(" Java Tutorials Certificate - SoloLearn \n Python 3 Tutorials Certificate - SoloLearn \n Introduction to AWS - A Cloud Guru \n Introduction to Google Cloud Platform - A Cloud Guru \n Google Cloud Platform Essential Training (2017) - LinkedIn \n Understanding Neural Networks - Amazon Web Services (AWS) \n Python Data Structures - University of Michigan \n AI For Everyone - deeplearning.ai \n KPMG Virtual Internship - KPMG" );
+            },
+
+resume: function(){
+                this.echo("you want my resume? right here.");
+                this.echo($('<a href="https://drive.google.com/file/d/1R2CQGaIJj1AujsdS89L1VICM67p1DZz3/view?usp=sharing">resume</a> \n' ));
+            },
+ls: function(){
+                this.echo("[resume] \n[education]\n[about]" );
+            },
+relevant: function(){
+                this.echo("Relevant courses taken include, \n Data Structures \n Systems Level Programming\n Computer Organization" );
+            },
+contact: function(){
+                this.echo("you can contact me through these accounts here,\n               " );
+            },        
+experience: function(){
+                this.echo("coconvos \n  Chief Product Officer March 2021-Ongoing \n Technical Program Manager January 2021 – March 2021 \ntal-labs\n   Founder, Chief Executive Officer September 2019-Ongoing \ntheCoderSchool \n  CS Instructor August 2019 – Ongoing \nTürkiye İş Bankası\n SWE Intern Sep. 2020 – Oct. 2020 \nuVox Inc \n Cloud Engineering Intern May 2019 –December 2020 \ncanmes-store\n Co-Owner September 2019-Ongoing              " );
+            },        
+             
+    
+}, 
+    
+        
+        {
+            greetings: 'BASIC\n Checking Disk Space... \n 15476 Bytes free \n Ok. \n hi, my name is john. or can. or hakan. depends in which occasion we met. what is your name? \n type it as "name [firstname] "\n '
+            ,
+            prompt: 'user@ubuntu:~$ ',
+            
+
+        });
+  
+
+// https://itnext.io/how-to-create-interactive-terminal-like-website-888bb0972288
+// TODO: change font size, refer to this here: https://codepen.io/jcubic/pen/xReWxJ?editors=1100
+        </script>
+
+</body>
+</html>
